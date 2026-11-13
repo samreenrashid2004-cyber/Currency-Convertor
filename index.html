@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Currency Converter</h2>
+
+        <form>
+
+            <!-- Amount -->
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input
+                    type="number"
+                    value="1"
+                    min="0.01"
+                    step="any"
+                    placeholder="Enter amount"
+                >
+            </div>
+
+            <!-- Currency Selection -->
+            <div class="dropdown">
+
+                <div class="from">
+                    <p>From</p>
+
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+
+                        <select name="from"></select>
+                    </div>
+                </div>
+
+                <!-- Swap Icon -->
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <div class="to">
+                    <p>To</p>
+
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/flat/64.png" alt="Pakistan Flag">
+
+                        <select name="to"></select>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Exchange Result -->
+            <div class="msg">
+                Getting exchange rate...
+            </div>
+
+            <!-- Convert Button -->
+            <button type="submit">
+                Get Exchange Rate
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
